@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Herani Cakes | Custom Artisanal Order Menu</title>
 
-    <!-- PWA Application Integration Links -->
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#1c1917" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -17,9 +16,6 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      .slide-fade {
-        transition: opacity 1.5s ease-in-out;
-      }
       html {
         scroll-behavior: smooth;
       }
@@ -33,32 +29,31 @@
   <body
     class="bg-[#fbfbfa] font-sans text-stone-800 antialiased select-none sm:select-text"
   >
-    <!-- Top Utility Information Banner -->
     <div
       class="bg-stone-900 text-stone-300 text-[10px] tracking-[0.25em] text-center py-2 uppercase font-light px-4"
     >
       Handcrafted Custom Cakes • Serving Austin & Surrounding Areas
     </div>
 
-    <!-- Header Navigation -->
     <header
       class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200/50"
     >
       <div
         class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center"
       >
-        <div class="flex flex-col">
+        <a href="#" class="flex flex-col group focus:outline-none">
           <h1
-            class="text-xl md:text-2xl font-light tracking-[0.2em] text-stone-950 uppercase font-serif"
+            class="text-xl md:text-2xl font-light tracking-[0.2em] text-stone-950 uppercase font-serif group-hover:text-stone-700 transition-colors"
           >
             HERANI
           </h1>
           <p
-            class="text-[9px] tracking-[0.35em] text-stone-500 uppercase font-medium -mt-0.5"
+            class="text-[9px] tracking-[0.35em] text-stone-500 uppercase font-medium -mt-0.5 group-hover:text-stone-400 transition-colors"
           >
             Cakes & Custom Designs
           </p>
-        </div>
+        </a>
+
         <nav
           class="hidden md:flex space-x-8 text-[11px] tracking-[0.2em] uppercase font-medium text-stone-500"
         >
@@ -78,33 +73,9 @@
       </div>
     </header>
 
-    <!-- Cinemagraph/Slideshow Hero Frame -->
-    <section
-      class="relative h-[440px] bg-stone-950 overflow-hidden flex items-center justify-center text-center text-white"
-    >
-      <div id="hero-slider" class="absolute inset-0 z-0"></div>
-      <div
-        class="absolute inset-0 bg-gradient-to-b from-stone-950/30 via-stone-900/10 to-[#fbfbfa] z-10"
-      ></div>
-      <div class="relative max-w-xl px-4 z-20 pointer-events-none mt-12">
-        <h2
-          class="text-3xl md:text-5xl font-serif font-light tracking-wide text-stone-900 mb-4"
-        >
-          Cakes Made for Celebrating
-        </h2>
-        <p
-          class="text-xs md:text-sm text-stone-600 max-w-sm mx-auto font-light tracking-wide leading-relaxed"
-        >
-          Select a baseline style from our menu below to instantly populate your
-          custom order configurations.
-        </p>
-      </div>
-    </section>
-
-    <!-- Section: The Cake Style Menu Gallery Matrix -->
     <main
       id="menu-catalog"
-      class="max-w-6xl mx-auto px-4 sm:px-6 py-12 -mt-12 relative z-30"
+      class="max-w-6xl mx-auto px-4 sm:px-6 py-12 relative z-30"
     >
       <div
         class="bg-white border border-stone-200/60 rounded-xl p-5 mb-14 shadow-sm"
@@ -119,7 +90,6 @@
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
-        <!-- Card 1 -->
         <div class="flex flex-col group">
           <div
             class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4"
@@ -152,7 +122,6 @@
           </button>
         </div>
 
-        <!-- Card 2 -->
         <div class="flex flex-col group">
           <div
             class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4"
@@ -186,7 +155,6 @@
           </button>
         </div>
 
-        <!-- Card 3 [REPAIRED CLOSING TAG HERE] -->
         <div class="flex flex-col group">
           <div
             class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4"
@@ -220,7 +188,6 @@
           </button>
         </div>
 
-        <!-- Card 4 -->
         <div class="flex flex-col group">
           <div
             class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4"
@@ -253,7 +220,6 @@
           </button>
         </div>
 
-        <!-- Card 5 -->
         <div class="flex flex-col group">
           <div
             class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4"
@@ -287,7 +253,6 @@
           </button>
         </div>
 
-        <!-- Card 6 -->
         <div class="flex flex-col group">
           <div
             class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4"
@@ -323,7 +288,6 @@
       </div>
     </main>
 
-    <!-- Order Entry Subsection Workbench -->
     <section
       id="order-form"
       class="py-16 bg-[#fafafa] border-t border-stone-200/50"
@@ -555,7 +519,6 @@
       </div>
     </section>
 
-    <!-- Allergy & Structural Verification Popup Engine Overlay Window -->
     <div
       id="termsModal"
       class="modal-backdrop fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 invisible opacity-0"
@@ -582,7 +545,6 @@
         <div
           class="p-6 overflow-y-auto space-y-5 text-xs text-stone-600 leading-relaxed"
         >
-          <!-- White Cake Formulations -->
           <div class="bg-stone-50 p-3.5 rounded-lg border border-stone-200/60">
             <h4 class="font-bold text-stone-950 mb-1 text-sm">White Cake</h4>
             <p class="text-stone-700">
@@ -607,7 +569,6 @@
             </p>
           </div>
 
-          <!-- Chocolate Cake Formulations -->
           <div class="bg-stone-50 p-3.5 rounded-lg border border-stone-200/60">
             <h4 class="font-bold text-stone-950 mb-1 text-sm">
               Chocolate Cake
@@ -633,7 +594,6 @@
             </p>
           </div>
 
-          <!-- Marble Cake Formulations -->
           <div class="bg-stone-50 p-3.5 rounded-lg border border-stone-200/60">
             <h4 class="font-bold text-stone-950 mb-1 text-sm">Marble Cake</h4>
             <p class="text-stone-700">
@@ -660,7 +620,6 @@
             </p>
           </div>
 
-          <!-- Fulfillment Location Metrics Notification -->
           <div
             class="bg-blue-50 border border-blue-200 text-blue-800 p-3 rounded-lg font-medium"
           >
@@ -697,7 +656,6 @@
       </div>
     </div>
 
-    <!-- Web Footer Area Section -->
     <footer
       class="bg-stone-950 text-stone-600 py-8 text-center text-[10px] tracking-[0.2em] uppercase"
     >
@@ -705,7 +663,6 @@
       <p>&copy; 2026 Studio Webflows. All rights reserved.</p>
     </footer>
 
-    <!-- Service Application Runtime Script Engine Block -->
     <script>
       const CLOUD_TUNNEL_URL =
         "https://script.google.com/macros/s/AKfycbzxofZP4z7rPreI9_QVFwK9G4I6jFllx9UbFxJJl5wVeuKieOH-3R7bWgofXmiByCYu5A/exec";
@@ -725,41 +682,6 @@
             );
         });
       }
-
-      // Media Background Slider Track Mapping
-      const assetPortfolio = [
-        { type: "image", src: "./IMG_0713.JPG" },
-        { type: "video", src: "./IMG_0713.MP4" },
-        { type: "image", src: "./IMG_0714.JPG" },
-        { type: "video", src: "./IMG_0714.MP4" },
-      ];
-
-      const sliderTrack = document.getElementById("hero-slider");
-      if (sliderTrack) {
-        assetPortfolio.forEach((asset, index) => {
-          let el =
-            asset.type === "video"
-              ? document.createElement("video")
-              : document.createElement("img");
-          el.src = asset.src;
-          if (asset.type === "video") {
-            el.autoplay = el.loop = el.muted = true;
-            el.setAttribute("playsinline", "");
-          }
-          el.className = `absolute inset-0 w-full h-full object-cover slide-fade ${index === 0 ? "opacity-100" : "opacity-0"}`;
-          sliderTrack.appendChild(el);
-        });
-      }
-
-      let currentActiveIdx = 0;
-      setInterval(() => {
-        if (!sliderTrack) return;
-        const nodes = sliderTrack.children;
-        if (!nodes.length) return;
-        nodes[currentActiveIdx].classList.replace("opacity-100", "opacity-0");
-        currentActiveIdx = (currentActiveIdx + 1) % nodes.length;
-        nodes[currentActiveIdx].classList.replace("opacity-0", "opacity-100");
-      }, 5000);
 
       // Populate Strict Future Dates Dropdown Selector
       const dateSelect = document.getElementById("eventDate");
