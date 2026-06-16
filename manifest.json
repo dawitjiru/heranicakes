@@ -1,0 +1,18 @@
+{
+  "name": "Herani Cakes & Custom Designs",
+  "short_name": "Herani Cakes",
+  "description": "Artisanal Custom Cake Order Menu & Inquiry Terminal",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fbfbfa",
+  "theme_color": "#1c1917",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "IMG_0953.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
