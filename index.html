@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,14 +8,8 @@
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#1c1917" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="https://dawitd.github.io/heranicakes/IMG_0953.jpg"
-    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="IMG_0953.jpg" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -26,436 +20,205 @@
         scroll-behavior: smooth;
       }
       .modal-backdrop {
-        transition:
-          opacity 0.3s ease-in-out,
-          visibility 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
       }
     </style>
   </head>
-  <body
-    class="bg-[#fbfbfa] font-sans text-stone-800 antialiased select-none sm:select-text"
-  >
-    <div
-      class="bg-stone-900 text-stone-300 text-[10px] tracking-[0.25em] text-center py-2 uppercase font-light px-4"
-    >
+  <body class="bg-[#fbfbfa] font-sans text-stone-800 antialiased select-none sm:select-text">
+    
+    <div class="bg-stone-900 text-stone-300 text-[10px] tracking-[0.25em] text-center py-2 uppercase font-light px-4">
       Handcrafted Custom Cakes • Serving Austin & Surrounding Areas
     </div>
 
-    <header
-      class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200/50"
-    >
-      <div
-        class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center"
-      >
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200/50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
         <div class="flex flex-col">
-          <h1
-            class="text-xl md:text-2xl font-light tracking-[0.2em] text-stone-950 uppercase font-serif"
-          >
+          <h1 class="text-xl md:text-2xl font-light tracking-[0.2em] text-stone-950 uppercase font-serif">
             HERANI
           </h1>
-          <p
-            class="text-[9px] tracking-[0.35em] text-stone-500 uppercase font-medium -mt-0.5"
-          >
+          <p class="text-[9px] tracking-[0.35em] text-stone-500 uppercase font-medium -mt-0.5">
             Cakes & Custom Designs
           </p>
         </div>
-        <nav
-          class="hidden md:flex space-x-8 text-[11px] tracking-[0.2em] uppercase font-medium text-stone-500"
-        >
-          <a href="#menu-catalog" class="hover:text-stone-950 transition-colors"
-            >The Menu</a
-          >
-          <a href="#order-form" class="hover:text-stone-950 transition-colors"
-            >Custom Inquiry</a
-          >
+        <nav class="hidden md:flex space-x-8 text-[11px] tracking-[0.2em] uppercase font-medium text-stone-500">
+          <a href="#menu-catalog" class="hover:text-stone-950 transition-colors">The Menu</a>
+          <a href="#order-form" class="hover:text-stone-950 transition-colors">Custom Inquiry</a>
         </nav>
-        <a
-          href="#menu-catalog"
-          class="bg-stone-900 hover:bg-stone-800 text-white font-medium px-5 py-2.5 rounded-md transition-all text-[11px] tracking-widest uppercase"
-        >
+        <a href="#menu-catalog" class="bg-stone-900 hover:bg-stone-800 text-white font-medium px-5 py-2.5 rounded-md transition-all text-[11px] tracking-widest uppercase">
           Browse Menu
         </a>
       </div>
     </header>
 
-    <section
-      class="relative h-[440px] bg-stone-950 overflow-hidden flex items-center justify-center text-center text-white"
-    >
+    <section class="relative h-[440px] bg-stone-950 overflow-hidden flex items-center justify-center text-center text-white">
       <div id="hero-slider" class="absolute inset-0 z-0"></div>
-      <div
-        class="absolute inset-0 bg-gradient-to-b from-stone-950/30 via-stone-900/10 to-[#fbfbfa] z-10"
-      ></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-stone-950/30 via-stone-900/10 to-[#fbfbfa] z-10"></div>
       <div class="relative max-w-xl px-4 z-20 pointer-events-none mt-12">
-        <h2
-          class="text-3xl md:text-5xl font-serif font-light tracking-wide text-stone-900 mb-4"
-        >
+        <h2 class="text-3xl md:text-5xl font-serif font-light tracking-wide text-stone-900 mb-4">
           Cakes Made for Celebrating
         </h2>
-        <p
-          class="text-xs md:text-sm text-stone-600 max-w-sm mx-auto font-light tracking-wide leading-relaxed"
-        >
-          Select a baseline style from our menu below to instantly populate your
-          custom order configurations.
+        <p class="text-xs md:text-sm text-stone-600 max-w-sm mx-auto font-light tracking-wide leading-relaxed">
+          Select a baseline style from our menu below to instantly populate your custom order configurations.
         </p>
       </div>
     </section>
 
-    <main
-      id="menu-catalog"
-      class="max-w-6xl mx-auto px-4 sm:px-6 py-12 -mt-12 relative z-30"
-    >
-      <div
-        class="bg-white border border-stone-200/60 rounded-xl p-5 mb-14 shadow-sm"
-      >
+    <main id="menu-catalog" class="max-w-6xl mx-auto px-4 sm:px-6 py-12 -mt-12 relative z-30">
+      <div class="bg-white border border-stone-200/60 rounded-xl p-5 mb-14 shadow-sm">
         <h3 class="text-lg font-serif font-light tracking-wide text-stone-900">
           Custom Order Menu
         </h3>
         <p class="text-[11px] text-stone-400 mt-0.5">
-          Click "Select This Style" on any model to pull it straight into your
-          customization workbench.
+          Click "Select This Style" on any model to pull it straight into your customization workbench.
         </p>
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
         <div class="flex flex-col group">
-          <div
-            class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4"
-          >
-            <img
-              src="https://dawitd.github.io/heranicakes/IMG_0953.jpg"
-              alt="The Royal Scholar Tiered Cake"
-              class="w-full h-full object-cover"
-            />
-            <span
-              class="absolute top-3 left-3 bg-white/90 border border-stone-200/40 backdrop-blur-sm text-stone-800 text-[9px] font-semibold tracking-widest px-2.5 py-1 uppercase rounded-md"
-              >Graduation</span
-            >
+          <div class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4">
+            <img src="./IMG_0953.jpg" alt="The Royal Scholar Tiered Cake" class="w-full h-full object-cover" />
+            <span class="absolute top-3 left-3 bg-white/90 border border-stone-200/40 backdrop-blur-sm text-stone-800 text-[9px] font-semibold tracking-widest px-2.5 py-1 uppercase rounded-md">Graduation</span>
           </div>
-          <h4 class="text-base font-medium text-stone-900 mb-1.5">
-            The Royal Scholar Multi-Tier
-          </h4>
-          <p
-            class="text-xs text-stone-500 font-light leading-relaxed mb-4 flex-grow"
-          >
-            Features targeted branding profile elements, tailored organization
-            color motifs, and structural status cap toppers.
+          <h4 class="text-base font-medium text-stone-900 mb-1.5">The Royal Scholar Multi-Tier</h4>
+          <p class="text-xs text-stone-500 font-light leading-relaxed mb-4 flex-grow">
+            Features targeted branding profile elements, tailored organization color motifs, and structural status cap toppers.
           </p>
-          <button
-            type="button"
-            onclick="selectStyle('The Royal Scholar Multi-Tier')"
-            class="block text-center border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white font-medium text-[11px] tracking-widest uppercase py-2.5 rounded transition-all"
-          >
+          <button type="button" onclick="selectStyle('The Royal Scholar Multi-Tier')" class="block text-center border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white font-medium text-[11px] tracking-widest uppercase py-2.5 rounded transition-all">
             Select This Style
           </button>
         </div>
 
         <div class="flex flex-col group">
-          <div
-            class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4"
-          >
-            <img
-              src="https://dawitd.github.io/heranicakes/IMG_1363.jpg"
-              alt="Metallic Regal Tiered Cake"
-              class="w-full h-full object-cover"
-            />
-            <span
-              class="absolute top-3 left-3 bg-white/90 border border-stone-200/40 backdrop-blur-sm text-stone-800 text-[9px] font-semibold tracking-widest px-2.5 py-1 uppercase rounded-md"
-              >Modern</span
-            >
+          <div class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4">
+            <img src="./IMG_1363.jpg" alt="Metallic Regal Tiered Cake" class="w-full h-full object-cover" />
+            <span class="absolute top-3 left-3 bg-white/90 border border-stone-200/40 backdrop-blur-sm text-stone-800 text-[9px] font-semibold tracking-widest px-2.5 py-1 uppercase rounded-md">Modern</span>
           </div>
-          <h4 class="text-base font-medium text-stone-900 mb-1.5">
-            Metallic Regal Tiered Frame
-          </h4>
-          <p
-            class="text-xs text-stone-500 font-light leading-relaxed mb-4 flex-grow"
-          >
-            Sleek contemporary elegance highlighted by clear geometric text
-            plates, isolated gold/silver leaf accents, and matching minimal
-            ribbon trims.
+          <h4 class="text-base font-medium text-stone-900 mb-1.5">Metallic Regal Tiered Frame</h4>
+          <p class="text-xs text-stone-500 font-light leading-relaxed mb-4 flex-grow">
+            Sleek contemporary elegance highlighted by clear geometric text plates, isolated gold/silver leaf accents, and matching minimal ribbon trims.
           </p>
-          <button
-            type="button"
-            onclick="selectStyle('Metallic Regal Tiered Frame')"
-            class="block text-center border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white font-medium text-[11px] tracking-widest uppercase py-2.5 rounded transition-all"
-          >
+          <button type="button" onclick="selectStyle('Metallic Regal Tiered Frame')" class="block text-center border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white font-medium text-[11px] tracking-widest uppercase py-2.5 rounded transition-all">
             Select This Style
           </button>
         </div>
 
         <div class="flex flex-col group">
-          <div
-            class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4"
-          >
-            <img
-              src="https://dawitd.github.io/heranicakes/IMG_5595.jpg"
-              alt="Grand Floral Celebration Tiers"
-              class="w-full h-full object-cover"
-            />
-            <span
-              class="absolute top-3 left-3 bg-white/90 border border-stone-200/40 backdrop-blur-sm text-stone-800 text-[9px] font-semibold tracking-widest px-2.5 py-1 uppercase rounded-md"
-              >Celebration</span
-            >
+          <div class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4">
+            <img src="./IMG_5595.jpg" alt="Grand Floral Celebration Tiers" class="w-full h-full object-cover" />
+            <span class="absolute top-3 left-3 bg-white/90 border border-stone-200/40 backdrop-blur-sm text-stone-800 text-[9px] font-semibold tracking-widest px-2.5 py-1 uppercase rounded-md">Celebration</span>
           </div>
-          <h4 class="text-base font-medium text-stone-900 mb-1.5">
-            Grand Floral Celebration Tiers
-          </h4>
-          <p
-            class="text-xs text-stone-500 font-light leading-relaxed mb-4 flex-grow"
-          >
-            Tailored for weddings and major milestone events. Features deep
-            texturing along the tier side-walls accompanied by majestic
-            cascading floral arrays.
-          </p>
-          <button
-            type="button"
-            onclick="selectStyle('Grand Floral Celebration Tiers')"
-            class="block text-center border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white font-medium text-[11px] tracking-widest uppercase py-2.5 rounded transition-all"
-          >
+          <h4 class="text-base font-medium text-stone-900 mb-1.5">Grand Floral Celebration Tiers</h4>
+          <p class="text-xs text-stone-500 font-light leading-relaxed mb-4 flex-grow">
+            Tailored for weddings and major milestone events. Features deep texturing along the tier side-walls accompanied by majestic cascading floral arrays.</p>
+          <button type="button" onclick="selectStyle('Grand Floral Celebration Tiers')" class="block text-center border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white font-medium text-[11px] tracking-widest uppercase py-2.5 rounded transition-all">
             Select This Style
           </button>
         </div>
 
         <div class="flex flex-col group">
-          <div
-            class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4"
-          >
-            <img
-              src="https://dawitd.github.io/heranicakes/IMG_0903.jpg"
-              alt="Velvet Royal Texture Stack Cake"
-              class="w-full h-full object-cover"
-            />
-            <span
-              class="absolute top-3 left-3 bg-white/90 border border-stone-200/40 backdrop-blur-sm text-stone-800 text-[9px] font-semibold tracking-widest px-2.5 py-1 uppercase rounded-md"
-              >Luxury</span
-            >
+          <div class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4">
+            <img src="./IMG_0903.jpg" alt="Velvet Royal Texture Stack Cake" class="w-full h-full object-cover" />
+            <span class="absolute top-3 left-3 bg-white/90 border border-stone-200/40 backdrop-blur-sm text-stone-800 text-[9px] font-semibold tracking-widest px-2.5 py-1 uppercase rounded-md">Luxury</span>
           </div>
-          <h4 class="text-base font-medium text-stone-900 mb-1.5">
-            Velvet Royal Texture Stack
-          </h4>
-          <p
-            class="text-xs text-stone-500 font-light leading-relaxed mb-4 flex-grow"
-          >
-            Features deeply saturated color bands paired with high-contrast
-            milestone lettering panels and elegant border ribbons.
+          <h4 class="text-base font-medium text-stone-900 mb-1.5">Velvet Royal Texture Stack</h4>
+          <p class="text-xs text-stone-500 font-light leading-relaxed mb-4 flex-grow">
+            Features deeply saturated color bands paired with high-contrast milestone lettering panels and elegant border ribbons.
           </p>
-          <button
-            type="button"
-            onclick="selectStyle('Velvet Royal Texture Stack')"
-            class="block text-center border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white font-medium text-[11px] tracking-widest uppercase py-2.5 rounded transition-all"
-          >
+          <button type="button" onclick="selectStyle('Velvet Royal Texture Stack')" class="block text-center border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white font-medium text-[11px] tracking-widest uppercase py-2.5 rounded transition-all">
             Select This Style
           </button>
         </div>
 
         <div class="flex flex-col group">
-          <div
-            class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4"
-          >
-            <img
-              src="https://dawitd.github.io/heranicakes/IMG_0911.jpg"
-              alt="Classic Pearl Pastel Ensemble Cake"
-              class="w-full h-full object-cover"
-            />
-            <span
-              class="absolute top-3 left-3 bg-white/90 border border-stone-200/40 backdrop-blur-sm text-stone-800 text-[9px] font-semibold tracking-widest px-2.5 py-1 uppercase rounded-md"
-              >Elegant</span
-            >
+          <div class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4">
+            <img src="./IMG_0911.jpg" alt="Classic Pearl Pastel Ensemble Cake" class="w-full h-full object-cover" />
+            <span class="absolute top-3 left-3 bg-white/90 border border-stone-200/40 backdrop-blur-sm text-stone-800 text-[9px] font-semibold tracking-widest px-2.5 py-1 uppercase rounded-md">Elegant</span>
           </div>
-          <h4 class="text-base font-medium text-stone-900 mb-1.5">
-            Classic Pearl Pastel Ensemble
-          </h4>
-          <p
-            class="text-xs text-stone-500 font-light leading-relaxed mb-4 flex-grow"
-          >
-            Intricate outer piping layers arranged symmetrically. Universally
-            flattering for refined anniversaries, showers, or delicate milestone
-            birthdays.
+          <h4 class="text-base font-medium text-stone-900 mb-1.5">Classic Pearl Pastel Ensemble</h4>
+          <p class="text-xs text-stone-500 font-light leading-relaxed mb-4 flex-grow">
+            Intricate outer piping layers arranged symmetrically. Universally flattering for refined anniversaries, showers, or delicate milestone birthdays.
           </p>
-          <button
-            type="button"
-            onclick="selectStyle('Classic Pearl Pastel Ensemble')"
-            class="block text-center border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white font-medium text-[11px] tracking-widest uppercase py-2.5 rounded transition-all"
-          >
+          <button type="button" onclick="selectStyle('Classic Pearl Pastel Ensemble')" class="block text-center border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white font-medium text-[11px] tracking-widest uppercase py-2.5 rounded transition-all">
             Select This Style
           </button>
         </div>
 
         <div class="flex flex-col group">
-          <div
-            class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4"
-          >
-            <img
-              src="https://dawitd.github.io/heranicakes/IMG_0924.jpg"
-              alt="Contempo Structured Tiers Cake"
-              class="w-full h-full object-cover"
-            />
-            <span
-              class="absolute top-3 left-3 bg-white/90 border border-stone-200/40 backdrop-blur-sm text-stone-800 text-[9px] font-semibold tracking-widest px-2.5 py-1 uppercase rounded-md"
-              >Contemporary</span
-            >
+          <div class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-50 border border-stone-200/40 relative mb-4">
+            <img src="./IMG_0924.jpg" alt="Contempo Structured Tiers Cake" class="w-full h-full object-cover" />
+            <span class="absolute top-3 left-3 bg-white/90 border border-stone-200/40 backdrop-blur-sm text-stone-800 text-[9px] font-semibold tracking-widest px-2.5 py-1 uppercase rounded-md">Contemporary</span>
           </div>
-          <h4 class="text-base font-medium text-stone-900 mb-1.5">
-            Contempo Structured Tiers
-          </h4>
-          <p
-            class="text-xs text-stone-500 font-light leading-relaxed mb-4 flex-grow"
-          >
-            Features clean vertical edges combined with custom display bands,
-            integrated high-contrast lettering displays, and special event
-            accent crowns.
+          <h4 class="text-base font-medium text-stone-900 mb-1.5">Contempo Structured Tiers</h4>
+          <p class="text-xs text-stone-500 font-light leading-relaxed mb-4 flex-grow">
+            Features clean vertical edges combined with custom display bands, integrated high-contrast lettering displays, and special event accent crowns.
           </p>
-          <button
-            type="button"
-            onclick="selectStyle('Contempo Structured Tiers')"
-            class="block text-center border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white font-medium text-[11px] tracking-widest uppercase py-2.5 rounded transition-all"
-          >
+          <button type="button" onclick="selectStyle('Contempo Structured Tiers')" class="block text-center border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white font-medium text-[11px] tracking-widest uppercase py-2.5 rounded transition-all">
             Select This Style
           </button>
         </div>
       </div>
     </main>
 
-    <section
-      id="order-form"
-      class="py-16 bg-[#fafafa] border-t border-stone-200/50"
-    >
+    <section id="order-form" class="py-16 bg-[#fafafa] border-t border-stone-200/50">
       <div class="max-w-3xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-10">
-          <span
-            class="text-[10px] font-bold tracking-[0.25em] uppercase text-stone-400 block mb-1.5"
-            >Order Workbench</span
-          >
-          <h3
-            class="text-2xl font-serif font-light text-stone-900 tracking-wide"
-          >
+          <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-stone-400 block mb-1.5">Order Workbench</span>
+          <h3 class="text-2xl font-serif font-light text-stone-900 tracking-wide">
             Cake Configuration Inquiry
           </h3>
           <p class="text-stone-500 text-xs max-w-sm mx-auto mt-1">
-            Configure your variables below. Submissions transmit instantly
-            directly to our tracking terminal.
+            Configure your variables below. Submissions transmit instantly directly to our tracking terminal.
           </p>
         </div>
 
-        <form
-          id="cake-order-form"
-          onsubmit="handleFormSubmit(event)"
-          class="bg-white border border-stone-200/60 rounded-xl p-6 md:p-10 shadow-sm space-y-6"
-        >
+        <form id="cake-order-form" onsubmit="handleFormSubmit(event)" class="bg-white border border-stone-200/60 rounded-xl p-6 md:p-10 shadow-sm space-y-6">
           <div class="grid md:grid-cols-2 gap-6">
             <div>
-              <label
-                class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2"
-                >Full Name *</label
-              >
-              <input
-                type="text"
-                id="fullName"
-                required
-                class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900"
-              />
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2">Full Name *</label>
+              <input type="text" id="fullName" required class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900" />
             </div>
             <div>
-              <label
-                class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2"
-                >Phone Number *</label
-              >
-              <input
-                type="tel"
-                id="phoneNumber"
-                required
-                class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900"
-              />
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2">Phone Number *</label>
+              <input type="tel" id="phoneNumber" required class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900" />
             </div>
           </div>
 
           <div class="grid md:grid-cols-2 gap-6">
             <div>
-              <label
-                class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2"
-                >Email Address *</label
-              >
-              <input
-                type="email"
-                id="emailAddress"
-                required
-                class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900"
-              />
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2">Email Address *</label>
+              <input type="email" id="emailAddress" required class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900" />
             </div>
             <div>
-              <label
-                class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2"
-                >Date of Event *</label
-              >
-              <select
-                id="eventDate"
-                required
-                class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900"
-              ></select>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2">Date of Event *</label>
+              <select id="eventDate" required class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900"></select>
             </div>
           </div>
 
           <div class="grid md:grid-cols-2 gap-6">
             <div>
-              <label
-                class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2"
-                >Selected Baseline Style *</label
-              >
-              <input
-                type="text"
-                id="selectedStyle"
-                readonly
-                placeholder="Select a style from the menu above"
-                class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-100 font-medium text-stone-700 cursor-not-allowed focus:outline-none"
-              />
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2">Selected Baseline Style *</label>
+              <input type="text" id="selectedStyle" readonly placeholder="Select a style from the menu above" class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-100 font-medium text-stone-700 cursor-not-allowed focus:outline-none" />
             </div>
             <div>
-              <label
-                class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2"
-                >Size & Tier Preferences *</label
-              >
-              <select
-                id="cakeSize"
-                required
-                class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900"
-              >
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2">Size & Tier Preferences *</label>
+              <select id="cakeSize" required class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900">
                 <option value="">-- Choose Size Layer --</option>
-                <option value="Single Tier (10-15 servings)">
-                  Single Tier (10-15 servings)
-                </option>
-                <option value="Single Tier (20-25 servings)">
-                  Single Tier (20-25 servings)
-                </option>
-                <option value="2-Tier Cake (25-35 servings)">
-                  2-Tier Cake (25-35 servings)
-                </option>
-                <option value="2-Tier Cake (40-50 servings)">
-                  2-Tier Cake (40-50 servings)
-                </option>
-                <option value="3-Tier Cake (50-75 servings)">
-                  3-Tier Cake (50-75 servings)
-                </option>
-                <option value="3-Tier Cake Custom Scale (75+ servings)">
-                  3-Tier Cake Custom Scale (75+ servings)
-                </option>
+                <option value="Single Tier (10-15 servings)">Single Tier (10-15 servings)</option>
+                <option value="Single Tier (20-25 servings)">Single Tier (20-25 servings)</option>
+                <option value="2-Tier Cake (25-35 servings)">2-Tier Cake (25-35 servings)</option>
+                <option value="2-Tier Cake (40-50 servings)">2-Tier Cake (40-50 servings)</option>
+                <option value="3-Tier Cake (50-75 servings)">3-Tier Cake (50-75 servings)</option>
+                <option value="3-Tier Cake Custom Scale (75+ servings)">3-Tier Cake Custom Scale (75+ servings)</option>
               </select>
             </div>
           </div>
 
           <div class="grid md:grid-cols-2 gap-6">
             <div>
-              <label
-                class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2"
-                >Cake Flavor Profile *</label
-              >
-              <select
-                id="cakeFlavor"
-                required
-                class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900"
-              >
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2">Cake Flavor Profile *</label>
+              <select id="cakeFlavor" required class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900">
                 <option value="">-- Choose Primary Flavor --</option>
-                <option value="Classic Vanilla Bean">
-                  Classic Vanilla Bean
-                </option>
+                <option value="Classic Vanilla Bean">Classic Vanilla Bean</option>
                 <option value="Decadent Chocolate">Decadent Chocolate</option>
                 <option value="Marble Twist">Marble Twist</option>
                 <option value="Lemon Zest">Lemon Zest</option>
@@ -463,82 +226,39 @@
               </select>
             </div>
             <div>
-              <label
-                class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2"
-                >Filling Preferences *</label
-              >
-              <select
-                id="cakeFilling"
-                required
-                class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900"
-              >
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2">Filling Preferences *</label>
+              <select id="cakeFilling" required class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900">
                 <option value="">-- Choose Filling Profile --</option>
                 <option value="Vanilla Buttercream">Vanilla Buttercream</option>
                 <option value="Chocolate Ganache">Chocolate Ganache</option>
-                <option value="Cream Cheese Frosting">
-                  Cream Cheese Frosting
-                </option>
-                <option value="Fresh Fruit Preserves">
-                  Fresh Fruit Preserves
-                </option>
+                <option value="Cream Cheese Frosting">Cream Cheese Frosting</option>
+                <option value="Fresh Fruit Preserves">Fresh Fruit Preserves</option>
                 <option value="Salted Caramel">Salted Caramel</option>
               </select>
             </div>
           </div>
 
           <div>
-            <label
-              class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2"
-              >Design Vision & Theme Description *</label
-            >
-            <textarea
-              id="designDescription"
-              required
-              rows="4"
-              placeholder="Describe colors, specific elements, lettering plates..."
-              class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900"
-            ></textarea>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2">Design Vision & Theme Description *</label>
+            <textarea id="designDescription" required rows="4" placeholder="Describe colors, specific elements, lettering plates..." class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900"></textarea>
           </div>
 
           <div class="grid md:grid-cols-2 gap-6">
             <div>
-              <label
-                class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2"
-                >Fulfillment Method *</label
-              >
-              <select
-                id="fulfillment"
-                required
-                onchange="toggleAddressField()"
-                class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900"
-              >
-                <option value="Studio Pickup (Free)">
-                  Studio Pickup (Free)
-                </option>
-                <option value="Delivery (Fees Apply)">
-                  Delivery (Fees Apply)
-                </option>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2">Fulfillment Method *</label>
+              <select id="fulfillment" required onchange="toggleAddressField()" class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900">
+                <option value="Studio Pickup (Free)">Studio Pickup (Free)</option>
+                <option value="Delivery (Fees Apply)">Delivery (Fees Apply)</option>
               </select>
             </div>
             <div id="addressContainer" class="hidden">
-              <label
-                class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2"
-                >Delivery Location Address *</label
-              >
-              <input
-                type="text"
-                id="deliveryAddress"
-                class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900"
-              />
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-600 mb-2">Delivery Location Address *</label>
+              <input type="text" id="deliveryAddress" class="w-full border border-stone-200 rounded-md px-4 py-2.5 text-sm bg-stone-50/50 focus:outline-none focus:border-stone-900" />
             </div>
           </div>
 
           <div class="pt-4">
-            <button
-              type="submit"
-              id="submitBtn"
-              class="w-full bg-stone-900 hover:bg-stone-800 text-white font-medium text-xs tracking-widest uppercase py-4 rounded-md shadow-sm transition-all"
-            >
+            <button type="submit" id="submitBtn" class="w-full bg-stone-900 hover:bg-stone-800 text-white font-medium text-xs tracking-widest uppercase py-4 rounded-md shadow-sm transition-all">
               Send Inquiry
             </button>
           </div>
@@ -546,197 +266,94 @@
       </div>
     </section>
 
-    <div
-      id="termsModal"
-      class="modal-backdrop fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 invisible opacity-0"
-    >
-      <div
-        class="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden border border-stone-200"
-      >
-        <div
-          class="p-5 border-b border-stone-100 bg-stone-50 flex justify-between items-center"
-        >
-          <h3
-            class="text-base font-bold uppercase tracking-wider text-stone-900"
-          >
+    <div id="termsModal" class="modal-backdrop fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 invisible opacity-0">
+      <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden border border-stone-200">
+        <div class="p-5 border-b border-stone-100 bg-stone-50 flex justify-between items-center">
+          <h3 class="text-base font-bold uppercase tracking-wider text-stone-900">
             ⚠️ Ingredients & Allergy Review
           </h3>
-          <button
-            type="button"
-            onclick="closeModal()"
-            class="text-stone-400 hover:text-stone-600 font-bold text-lg focus:outline-none"
-          >
+          <button type="button" onclick="closeModal()" class="text-stone-400 hover:text-stone-600 font-bold text-lg focus:outline-none">
             &times;
           </button>
         </div>
-        <div
-          class="p-6 overflow-y-auto space-y-5 text-xs text-stone-600 leading-relaxed"
-        >
+        <div class="p-6 overflow-y-auto space-y-5 text-xs text-stone-600 leading-relaxed">
+          
           <div class="bg-stone-50 p-3.5 rounded-lg border border-stone-200/60">
             <h4 class="font-bold text-stone-950 mb-1 text-sm">White Cake</h4>
             <p class="text-stone-700">
-              <strong>Ingredients:</strong> Sugar, bleached enriched wheat flour
-              (flour, malted barley flour, niacin, reduced iron, thiamine
-              mononitrate, riboflavin, folic acid), water, soybean oil, eggs,
-              egg whites, high fructose corn syrup. Contains 2% or less of each
-              of the following: milk protein concentrate, salt, cornstarch,
-              wheat starch, whey, sodium acid pyrophosphate, nonfat milk, baking
-              soda, natural and artificial flavor, soy lecithin, mono- and
-              diglycerides, cellulose gum, gum arabic, isolated soy protein,
-              lactose, palm oil, monocalcium phosphate, xanthan gum, guar gum,
-              polyglycerol esters of fatty acids, propylene glycol mono- and
-              diesters of fats and fatty acids, yellow corn flour, datem, sodium
-              aluminum phosphate, aluminum sulfate.
+              <strong>Ingredients:</strong> Sugar, bleached enriched wheat flour (flour, malted barley flour, niacin, reduced iron, thiamine mononitrate, riboflavin, folic acid), water, soybean oil, eggs, egg whites, high fructose corn syrup. Contains 2% or less of each of the following: milk protein concentrate, salt, cornstarch, wheat starch, whey, sodium acid pyrophosphate, nonfat milk, baking soda, natural and artificial flavor, soy lecithin, mono- and diglycerides, cellulose gum, gum arabic, isolated soy protein, lactose, palm oil, monocalcium phosphate, xanthan gum, guar gum, polyglycerol esters of fatty acids, propylene glycol mono- and diesters of fats and fatty acids, yellow corn flour, datem, sodium aluminum phosphate, aluminum sulfate.
             </p>
-            <p
-              class="text-amber-800 font-semibold bg-amber-50 px-2 py-1 rounded mt-2"
-            >
-              Allergy Information: Contains eggs, milk, soy, wheat. Manufactured
-              in a shared facility with: walnuts, coconut.
+            <p class="text-amber-800 font-semibold bg-amber-50 px-2 py-1 rounded mt-2">
+              Allergy Information: Contains eggs, milk, soy, wheat. Manufactured in a shared facility with: walnuts, coconut.
             </p>
           </div>
 
           <div class="bg-stone-50 p-3.5 rounded-lg border border-stone-200/60">
-            <h4 class="font-bold text-stone-950 mb-1 text-sm">
-              Chocolate Cake
-            </h4>
+            <h4 class="font-bold text-stone-950 mb-1 text-sm">Chocolate Cake</h4>
             <p class="text-stone-700">
-              <strong>Ingredients:</strong> Sugar, bleached enriched wheat flour
-              (flour, malted barley flour, niacin, reduced iron, thiamine
-              mononitrate, riboflavin, folic acid), water, soybean oil, eggs,
-              egg whites, cocoa (processed with alkali), high fructose corn
-              syrup. Contains 2% or less of each of the following: natural and
-              artificial flavor, food starch-modified, salt, baking soda, sodium
-              acid pyrophosphate, soy lecithin, calcium sulfate, mono- and
-              diglycerides, cellulose gum, xanthan gum, polyglycerol esters of
-              fatty acids, monocalcium phosphate, propylene glycol mono- and
-              diesters of fats and fatty acids, datem, sodium aluminum
-              phosphate, aluminum sulfate, sodium benzoate (preservative).
+              <strong>Ingredients:</strong> Sugar, bleached enriched wheat flour (flour, malted barley flour, niacin, reduced iron, thiamine mononitrate, riboflavin, folic acid), water, soybean oil, eggs, egg whites, cocoa (processed with alkali), high fructose corn syrup. Contains 2% or less of each of the following: natural and artificial flavor, food starch-modified, salt, baking soda, sodium acid pyrophosphate, soy lecithin, calcium sulfate, mono- and diglycerides, cellulose gum, xanthan gum, polyglycerol esters of fatty acids, monocalcium phosphate, propylene glycol mono- and diesters of fats and fatty acids, datem, sodium aluminum phosphate, aluminum sulfate, sodium benzoate (preservative).
             </p>
-            <p
-              class="text-amber-800 font-semibold bg-amber-50 px-2 py-1 rounded mt-2"
-            >
-              Allergy Information: Contains eggs, milk, soy, wheat. Manufactured
-              in a shared facility with: walnuts, coconut.
+            <p class="text-amber-800 font-semibold bg-amber-50 px-2 py-1 rounded mt-2">
+              Allergy Information: Contains eggs, milk, soy, wheat. Manufactured in a shared facility with: walnuts, coconut.
             </p>
           </div>
 
           <div class="bg-stone-50 p-3.5 rounded-lg border border-stone-200/60">
             <h4 class="font-bold text-stone-950 mb-1 text-sm">Marble Cake</h4>
             <p class="text-stone-700">
-              <strong>Ingredients:</strong> Sugar, bleached enriched wheat flour
-              (flour, malted barley flour, niacin, reduced iron, thiamine
-              mononitrate, riboflavin, folic acid), water, soybean oil, eggs,
-              egg whites, high fructose corn syrup. Contains 2% or less of each
-              of the following: cocoa (processed with alkali), salt, milk
-              protein concentrate, cornstarch, natural and artificial flavor,
-              sodium acid pyrophosphate, baking soda, wheat starch, soy
-              lecithin, whey, nonfat milk, food starch-modified, mono- and
-              diglycerides, cellulose gum, monocalcium phosphate, calcium
-              sulfate, xanthan gum, sodium aluminum phosphate, gum arabic,
-              isolated soy protein, lactose, palm oil, polyglycerol esters of
-              fatty acids, guar gum, propylene glycol mono- and diesters of fats
-              and fatty acids, aluminum sulfate, yellow corn flour, datem,
-              yellow 5, yellow 6, sodium benzoate (preservative).
+              <strong>Ingredients:</strong> Sugar, bleached enriched wheat flour (flour, malted barley flour, niacin, reduced iron, thiamine mononitrate, riboflavin, folic acid), water, soybean oil, eggs, egg whites, high fructose corn syrup. Contains 2% or less of each of the following: cocoa (processed with alkali), salt, milk protein concentrate, cornstarch, natural and artificial flavor, sodium acid pyrophosphate, baking soda, wheat starch, soy lecithin, whey, nonfat milk, food starch-modified, mono- and diglycerides, cellulose gum, monocalcium phosphate, calcium sulfate, xanthan gum, sodium aluminum phosphate, gum arabic, isolated soy protein, lactose, palm oil, polyglycerol esters of fatty acids, guar gum, propylene glycol mono- and diesters of fats and fatty acids, aluminum sulfate, yellow corn flour, datem, yellow 5, yellow 6, sodium benzoate (preservative).
             </p>
-            <p
-              class="text-amber-800 font-semibold bg-amber-50 px-2 py-1 rounded mt-2"
-            >
-              Allergy Information: Contains eggs, milk, soy, wheat. Manufactured
-              in a shared facility with: walnuts, coconut.
+            <p class="text-amber-800 font-semibold bg-amber-50 px-2 py-1 rounded mt-2">
+              Allergy Information: Contains eggs, milk, soy, wheat. Manufactured in a shared facility with: walnuts, coconut.
             </p>
           </div>
 
-          <div
-            class="bg-blue-50 border border-blue-200 text-blue-800 p-3 rounded-lg font-medium"
-          >
-            📍 Cakes & cupcake orders can be picked up the Bakery area within
-            the club.
+          <div class="bg-blue-50 border border-blue-200 text-blue-800 p-3 rounded-lg font-medium">
+            📍 Cakes & cupcake orders can be picked up the Bakery area within the club.
           </div>
         </div>
-        <div
-          class="p-5 border-t border-stone-100 bg-stone-50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
-        >
-          <label
-            class="inline-flex items-center cursor-pointer select-none text-stone-700"
-          >
-            <input
-              type="checkbox"
-              id="allergyCheckbox"
-              onchange="toggleModalConfirmBtn()"
-              class="w-4 h-4 text-stone-900 border-stone-300 rounded accent-stone-900"
-            />
-            <span class="ml-2 font-semibold"
-              >I have reviewed and understand the allergy profiles. *</span
-            >
+        <div class="p-5 border-t border-stone-100 bg-stone-50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <label class="inline-flex items-center cursor-pointer select-none text-stone-700">
+            <input type="checkbox" id="allergyCheckbox" onchange="toggleModalConfirmBtn()" class="w-4 h-4 text-stone-900 border-stone-300 rounded accent-stone-900" />
+            <span class="ml-2 font-semibold">I have reviewed and understand the allergy profiles. *</span>
           </label>
-          <button
-            type="button"
-            id="modalConfirmBtn"
-            disabled
-            onclick="confirmAndSendOrder()"
-            class="bg-stone-300 text-stone-500 font-bold tracking-wider text-[11px] uppercase px-5 py-3 rounded-md cursor-not-allowed transition-all w-full sm:w-auto text-center"
-          >
+          <button type="button" id="modalConfirmBtn" disabled onclick="confirmAndSendOrder()" class="bg-stone-300 text-stone-500 font-bold tracking-wider text-[11px] uppercase px-5 py-3 rounded-md cursor-not-allowed transition-all w-full sm:w-auto text-center">
             Confirm & Send
           </button>
         </div>
       </div>
     </div>
 
-    <footer
-      class="bg-stone-950 text-stone-600 py-8 text-center text-[10px] tracking-[0.2em] uppercase"
-    >
+    <footer class="bg-stone-950 text-stone-600 py-8 text-center text-[10px] tracking-[0.2em] uppercase">
       <p class="font-medium text-stone-400 mb-1">HERANI Custom Cake Artisans</p>
       <p>&copy; 2026 Studio Webflows. All rights reserved.</p>
     </footer>
 
     <script>
-      const CLOUD_TUNNEL_URL =
-        "https://script.google.com/macros/s/AKfycbzxofZP4z7rPreI9_QVFwK9G4I6jFllx9UbFxJJl5wVeuKieOH-3R7bWgofXmiByCYu5A/exec";
+      const CLOUD_TUNNEL_URL = "https://script.google.com/macros/s/AKfycbzxofZP4z7rPreI9_QVFwK9G4I6jFllx9UbFxJJl5wVeuKieOH-3R7bWgofXmiByCYu5A/exec";
 
       // Register Service Worker for PWA Local Phone Caching
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
           navigator.serviceWorker
-            .register(
-              "data:text/javascript;base64,c2VsZi5hZGRFdmVudExpc3RlbmVyKCdpbnN0YWxsJyxlPT5zZWxmLnNraXBXYWl0aW5nKCkpO3NlbGYuYWRkRXZlbnRMaXN0ZW5lcignYWN0aXZhdGUnLGU9PnNlbGYuY2xpZW50cy5jbGFpbSgpKTtzZWxmLmFkZEV2ZW50Expc3RlbmVyKCdmZXRjaCcsZT0+ZS5yZXNwb25kV2l0aChmZXRjaChlLnJlcXVlc3QpLmNhdGNoKCgpPT5uZXcgUmVzcG9uc2UoIk9mZmxpbmUiKSkpKTs=",
-            )
-            .then((reg) =>
-              console.log("App Service Worker registered successfully."),
-            )
-            .catch((err) =>
-              console.log("Service Worker registration failed: ", err),
-            );
+            .register("data:text/javascript;base64,c2VsZi5hZGRFdmVudExpc3RlbmVyKCdpbnN0YWxsJyxlPT5zZWxmLnNraXBXYWl0aW5nKCkpO3NlbGYuYWRkRXZlbnRMaXN0ZW5lcignYWN0aXZhdGUnLGU9PnNlbGYuY2xpZW50cy5jbGFpbSgpKTtzZWxmLmFkZEV2ZW50Expc3RlbmVyKCdmZXRjaCcsZT0+ZS5yZXNwb25kV2l0aChmZXRjaChlLnJlcXVlc3QpLmNhdGNoKCgpPT5uZXcgUmVzcG9uc2UoIk9mZmxpbmUiKSkpKTs=")
+            .then((reg) => console.log("App Service Worker registered successfully."))
+            .catch((err) => console.log("Service Worker registration failed: ", err));
         });
       }
 
-      // Media Background Slider Absolute GitHub Pages Resource Mapping Track
+      // Media Background Slider Track Mapping
       const assetPortfolio = [
-        {
-          type: "image",
-          src: "https://dawitd.github.io/heranicakes/IMG_0713.jpg",
-        },
-        {
-          type: "video",
-          src: "https://dawitd.github.io/heranicakes/IMG_0713.MP4",
-        },
-        {
-          type: "image",
-          src: "https://dawitd.github.io/heranicakes/IMG_0714.jpg",
-        },
-        {
-          type: "video",
-          src: "https://dawitd.github.io/heranicakes/IMG_0714.MP4",
-        },
+        { type: "image", src: "./IMG_0713.jpg" },
+        { type: "video", src: "./IMG_0713.MP4" },
+        { type: "image", src: "./IMG_0714.jpg" },
+        { type: "video", src: "./IMG_0714.MP4" },
       ];
-
+      
       const sliderTrack = document.getElementById("hero-slider");
       if (sliderTrack) {
         assetPortfolio.forEach((asset, index) => {
-          let el =
-            asset.type === "video"
-              ? document.createElement("video")
-              : document.createElement("img");
+          let el = asset.type === "video" ? document.createElement("video") : document.createElement('img');
           el.src = asset.src;
           if (asset.type === "video") {
             el.autoplay = el.loop = el.muted = true;
@@ -746,7 +363,7 @@
           sliderTrack.appendChild(el);
         });
       }
-
+      
       let currentActiveIdx = 0;
       setInterval(() => {
         if (!sliderTrack) return;
@@ -779,18 +396,12 @@
 
       function selectStyle(styleName) {
         document.getElementById("selectedStyle").value = styleName;
-        document
-          .getElementById("order-form")
-          .scrollIntoView({ behavior: "smooth" });
+        document.getElementById("order-form").scrollIntoView({ behavior: "smooth" });
       }
 
       function toggleAddressField() {
-        const isDelivery = document
-          .getElementById("fulfillment")
-          .value.includes("Delivery");
-        document
-          .getElementById("addressContainer")
-          .classList.toggle("hidden", !isDelivery);
+        const isDelivery = document.getElementById("fulfillment").value.includes("Delivery");
+        document.getElementById("addressContainer").classList.toggle("hidden", !isDelivery);
         document.getElementById("deliveryAddress").required = isDelivery;
       }
 
@@ -814,12 +425,10 @@
         const confirmBtn = document.getElementById("modalConfirmBtn");
         if (isChecked) {
           confirmBtn.removeAttribute("disabled");
-          confirmBtn.className =
-            "bg-stone-900 hover:bg-stone-800 text-white font-bold tracking-wider text-[11px] uppercase px-5 py-3 rounded-md shadow-sm transition-all w-full sm:w-auto text-center cursor-pointer";
+          confirmBtn.className = "bg-stone-900 hover:bg-stone-800 text-white font-bold tracking-wider text-[11px] uppercase px-5 py-3 rounded-md shadow-sm transition-all w-full sm:w-auto text-center cursor-pointer";
         } else {
           confirmBtn.setAttribute("disabled", "true");
-          confirmBtn.className =
-            "bg-stone-300 text-stone-500 font-bold tracking-wider text-[11px] uppercase px-5 py-3 rounded-md cursor-not-allowed transition-all w-full sm:w-auto text-center";
+          confirmBtn.className = "bg-stone-300 text-stone-500 font-bold tracking-wider text-[11px] uppercase px-5 py-3 rounded-md cursor-not-allowed transition-all w-full sm:w-auto text-center";
         }
       }
 
@@ -834,17 +443,13 @@
           phone: document.getElementById("phoneNumber").value,
           email: document.getElementById("emailAddress").value,
           date: document.getElementById("eventDate").value,
-          style:
-            document.getElementById("selectedStyle").value ||
-            "No Baseline Selected",
+          style: document.getElementById("selectedStyle").value || "No Baseline Selected",
           size: document.getElementById("cakeSize").value,
           flavor: document.getElementById("cakeFlavor").value,
           filling: document.getElementById("cakeFilling").value,
           vision: document.getElementById("designDescription").value,
           fulfill: document.getElementById("fulfillment").value,
-          addr:
-            document.getElementById("deliveryAddress").value ||
-            "N/A (Studio Pickup)",
+          addr: document.getElementById("deliveryAddress").value || "N/A (Studio Pickup)",
         };
 
         fetch(CLOUD_TUNNEL_URL, {
@@ -854,20 +459,13 @@
           body: JSON.stringify(orderPayload),
         })
           .then(() => {
-            alert(
-              "✨ Inquiry Transmitted Successfully! Your specifications are securely locked into our ledger. Check your Telegram feed shortly.",
-            );
+            alert("✨ Inquiry Transmitted Successfully! Your specifications are securely locked into our ledger. Check your Telegram feed shortly.");
             document.getElementById("cake-order-form").reset();
             toggleAddressField();
           })
-          .catch((err) =>
-            alert("⚠️ Request processing failure: " + err.message),
-          )
+          .catch((err) => alert("⚠️ Request processing failure: " + err.message))
           .finally(() => {
             btn.disabled = false;
             btn.textContent = "SEND INQUIRY";
           });
       }
-    </script>
-  </body>
-</html>
